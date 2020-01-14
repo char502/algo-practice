@@ -9,10 +9,13 @@
 function reverse(str) {
   let reversed = "";
 
-  for (let i = str.length - 1; i >= 0; i--) {
-    reversed.push(str[i]);
+  for (let character of str) {
+    reversed = character + reversed;
   }
-  return newArr.join("");
+
+  return reversed;
 }
+
+reverse("apple");
 
 module.exports = reverse;
